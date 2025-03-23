@@ -81,10 +81,11 @@ const SalmoonTokenWebsite = () => {
       {menuOpen && (
         <div className={`md:hidden ${darkMode ? 'bg-gray-800' : 'bg-white'} py-4 px-6 shadow-md`}>
           <div className="flex flex-col space-y-4">
-            <a href="#about" className="hover:text-blue-500 transition-colors" onClick={() => setMenuOpen(false)}>About</a>
-            <a href="#tokenomics" className="hover:text-blue-500 transition-colors" onClick={() => setMenuOpen(false)}>Tokenomics</a>
-            <a href="#roadmap" className="hover:text-blue-500 transition-colors" onClick={() => setMenuOpen(false)}>Roadmap</a>
-            <a href="#community" className="hover:text-blue-500 transition-colors" onClick={() => setMenuOpen(false)}>Community</a>
+          <button className="hover:text-blue-500 transition-colors" onClick={() => setMenuOpen(false)}>About</button>
+          <button className="hover:text-blue-500 transition-colors" onClick={() => setMenuOpen(false)}>Tokenomics</button>
+          <button className="hover:text-blue-500 transition-colors" onClick={() => setMenuOpen(false)}>Roadmap</button>
+          <button className="hover:text-blue-500 transition-colors" onClick={() => setMenuOpen(false)}>Community</button>
+
             <button className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 py-2 rounded-full font-medium hover:opacity-90 transition-opacity">
               Buy Salmoon
             </button>
@@ -401,7 +402,7 @@ const SalmoonTokenWebsite = () => {
               <input 
                 type="email" 
                 placeholder="Enter your email" 
-                className={`flex-1 px-4 py-3 rounded-l-lg focus:outline-none ${darkMode ? 'bg-gray-700 border-gray-600' : 'bg-white border-gray-300'} border`}
+                className={`flex-1 px-4 py-3 rounded-l-lg focus:outline-none ${darkMode ? 'bg-gray-700 border-gray-600' : 'bg-white border-gray-300'} border`} 
               />
               <button className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 py-3 rounded-r-lg font-medium hover:opacity-90 transition-opacity">
                 Subscribe
