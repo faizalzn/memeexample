@@ -429,10 +429,10 @@ const SalmoonTokenWebsite = () => {
               <a href="https://t.me/airdroplim" className={`w-10 h-10 rounded-full ${darkMode ? 'bg-gray-800 hover:bg-gray-700' : 'bg-white hover:bg-gray-200'} flex items-center justify-center transition-colors`}>
                 <span>TG</span>
               </a>
-              <a href="#" className={`w-10 h-10 rounded-full ${darkMode ? 'bg-gray-800 hover:bg-gray-700' : 'bg-white hover:bg-gray-200'} flex items-center justify-center transition-colors`}>
+              <a href="https://medium.com/@zenjoee" className={`w-10 h-10 rounded-full ${darkMode ? 'bg-gray-800 hover:bg-gray-700' : 'bg-white hover:bg-gray-200'} flex items-center justify-center transition-colors`}>
                 <span>D</span>
               </a>
-              <a href="#" className={`w-10 h-10 rounded-full ${darkMode ? 'bg-gray-800 hover:bg-gray-700' : 'bg-white hover:bg-gray-200'} flex items-center justify-center transition-colors`}>
+              <a href="https://discord.com/" className={`w-10 h-10 rounded-full ${darkMode ? 'bg-gray-800 hover:bg-gray-700' : 'bg-white hover:bg-gray-200'} flex items-center justify-center transition-colors`}>
                 <span>M</span>
               </a>
             </div>
