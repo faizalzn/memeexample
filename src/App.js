@@ -384,7 +384,7 @@ const SalmoonTokenWebsite = () => {
             {['Twitter', 'Telegram', 'Discord', 'Medium'].map((platform) => (
               <a 
                 key={platform}
-                href="#" 
+                href="https://x.com/zenyaad" 
                 className={`p-6 rounded-xl ${darkMode ? 'bg-gray-900 hover:bg-gray-700' : 'bg-white hover:bg-blue-100'} shadow-lg transition-all flex flex-col items-center justify-center gap-4 group`}
               >
                 <div className="w-16 h-16 rounded-full bg-blue-100 text-blue-500 flex items-center justify-center group-hover:scale-110 transition-transform">
@@ -423,10 +423,10 @@ const SalmoonTokenWebsite = () => {
             </div>
             
             <div className="flex gap-4">
-              <a href="#" className={`w-10 h-10 rounded-full ${darkMode ? 'bg-gray-800 hover:bg-gray-700' : 'bg-white hover:bg-gray-200'} flex items-center justify-center transition-colors`}>
+              <a href="https://x.com/zenyaad" className={`w-10 h-10 rounded-full ${darkMode ? 'bg-gray-800 hover:bg-gray-700' : 'bg-white hover:bg-gray-200'} flex items-center justify-center transition-colors`}>
                 <span>T</span>
               </a>
-              <a href="#" className={`w-10 h-10 rounded-full ${darkMode ? 'bg-gray-800 hover:bg-gray-700' : 'bg-white hover:bg-gray-200'} flex items-center justify-center transition-colors`}>
+              <a href="https://t.me/airdroplim" className={`w-10 h-10 rounded-full ${darkMode ? 'bg-gray-800 hover:bg-gray-700' : 'bg-white hover:bg-gray-200'} flex items-center justify-center transition-colors`}>
                 <span>TG</span>
               </a>
               <a href="#" className={`w-10 h-10 rounded-full ${darkMode ? 'bg-gray-800 hover:bg-gray-700' : 'bg-white hover:bg-gray-200'} flex items-center justify-center transition-colors`}>
