@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Moon, Sun, ArrowRight, ChevronDown, ExternalLink, Menu, X } from 'lucide-react';
+import { PieChart, Pie, Cell, ResponsiveContainer, Legend, Tooltip } from 'recharts';
 import './App.css';
 
 const SalmoonTokenWebsite = () => {
@@ -47,7 +48,7 @@ const SalmoonTokenWebsite = () => {
         <div className="container mx-auto flex justify-between items-center">
           <div className="flex items-center gap-2">
             <div className="h-10 w-10 rounded-full overflow-hidden">
-            <img src="/salmoon.png" alt="Salmoon Logo" className="h-full w-full object-cover" />
+            <img src="/salmoon.jpg" alt="Salmoon Logo" className="h-full w-full object-cover" />
             </div>
             <span className="font-bold text-xl bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">SALMOON</span>
           </div>
@@ -117,7 +118,10 @@ const SalmoonTokenWebsite = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full opacity-20 animate-pulse"></div>
               <div className="absolute inset-2 bg-gradient-to-br from-blue-300 to-purple-400 rounded-full opacity-30"></div>
               <div className="absolute inset-0 flex items-center justify-center">
-              <img src="/salmoon.jpg" alt="Salmoon" className="w-3/4 h-3/4 object-contain transform hover:rotate-12 transition-transform duration-300" />
+              <img src="/salmoon.jpg" alt="Salmoon" 
+     className="w-24 h-24 object-cover rounded-full border-2 border-white shadow-md transform hover:rotate-12 transition-transform duration-300" />
+
+
               </div>
             </div>
           </div>
@@ -188,7 +192,13 @@ const SalmoonTokenWebsite = () => {
               {/* Placeholder for chart - in real implementation you'd use recharts */}
               <div className="aspect-square max-w-md mx-auto rounded-full bg-gradient-to-br from-blue-400 to-purple-500 p-1">
                 <div className={`w-full h-full rounded-full ${darkMode ? 'bg-gray-900' : 'bg-white'} flex items-center justify-center`}>
-                  <p className="text-lg font-medium">Token Distribution Chart</p>
+                <img 
+  src="/salmoon.jpg" 
+  alt="Salmoon" 
+  className="max-w-40 max-h-40 w-full h-auto object-contain rounded-full mx-auto shadow-lg"
+/>
+
+
                 </div>
               </div>
             </div>
@@ -215,7 +225,7 @@ const SalmoonTokenWebsite = () => {
                   
                   <div className="flex justify-between pb-2 border-b border-gray-200 dark:border-gray-700">
                     <span>Presale Allocation</span>
-                    <span className="font-medium">40%</span>
+                    <span className="font-medium">35%</span>
                   </div>
                   
                   <div className="flex justify-between pb-2 border-b border-gray-200 dark:border-gray-700">
@@ -235,7 +245,7 @@ const SalmoonTokenWebsite = () => {
                   
                   <div className="flex justify-between">
                     <span>Community Rewards</span>
-                    <span className="font-medium">5%</span>
+                    <span className="font-medium">10%</span>
                   </div>
                 </div>
               </div>
@@ -418,7 +428,7 @@ const SalmoonTokenWebsite = () => {
           <div className="flex flex-col md:flex-row justify-between items-center mb-8">
             <div className="flex items-center gap-2 mb-6 md:mb-0">
               <div className="h-10 w-10 rounded-full overflow-hidden">
-              <img src="/logo.png" alt="Salmoon Logo" className="h-full w-full object-cover" />
+              <img src="/salmoon.jpg" alt="Salmoon Logo" className="h-full w-full object-cover" />
               </div>
               <span className="font-bold text-xl bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">SALMOON</span>
             </div>
