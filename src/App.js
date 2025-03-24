@@ -104,12 +104,18 @@ const SalmoonTokenWebsite = () => {
             <p className="text-lg md:text-xl mb-8 opacity-80">Swimming upstream in the crypto current, ready to leap to the moon. Join the school of HODLers today!</p>
             
             <div className="flex flex-wrap gap-4">
-              <button className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-8 py-3 rounded-full font-medium hover:opacity-90 transition-opacity flex items-center gap-2">
-                Get Started <ArrowRight size={18} />
-              </button>
-              <button className={`${darkMode ? 'bg-gray-800 text-white' : 'bg-white text-gray-800'} px-8 py-3 rounded-full font-medium border-2 border-blue-500 hover:border-purple-500 transition-colors flex items-center gap-2`}>
-                Learn More <ChevronDown size={18} />
-              </button>
+            <a href="https://raydium.io/" target="_blank" rel="noopener noreferrer">
+  <button className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-8 py-3 rounded-full font-medium hover:opacity-90 hover:scale-105 transition-all flex items-center gap-2">
+    Get Started <ArrowRight size={18} />
+  </button>
+</a>
+
+<a href="#about">
+  <button className={`${darkMode ? 'bg-gray-800 text-white' : 'bg-white text-gray-800'} px-8 py-3 rounded-full font-medium border-2 border-blue-500 hover:border-purple-500 hover:bg-blue-500 hover:text-white transition-all flex items-center gap-2`}>
+    Learn More <ChevronDown size={18} />
+  </button>
+</a>
+
             </div>
           </div>
           
@@ -118,8 +124,17 @@ const SalmoonTokenWebsite = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full opacity-20 animate-pulse"></div>
               <div className="absolute inset-2 bg-gradient-to-br from-blue-300 to-purple-400 rounded-full opacity-30"></div>
               <div className="absolute inset-0 flex items-center justify-center">
-              <img src="/salmoon.jpg" alt="Salmoon" 
-     className="w-24 h-24 object-cover rounded-full border-2 border-white shadow-md transform hover:rotate-12 transition-transform duration-300" />
+              <div className="w-1/3">
+              <div className="w-[250px] h-[250px] overflow-hidden rounded-full">
+  <img 
+    src="/salmoon.jpg" 
+    alt="Salmoon" 
+    className="w-full h-full object-cover"
+/>
+</div>
+
+</div>
+
 
 
               </div>
