@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Moon, Sun, ArrowRight, ChevronDown, ExternalLink, Menu, X } from 'lucide-react';
+import './App.css';
 
 const SalmoonTokenWebsite = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -46,7 +47,7 @@ const SalmoonTokenWebsite = () => {
         <div className="container mx-auto flex justify-between items-center">
           <div className="flex items-center gap-2">
             <div className="h-10 w-10 rounded-full overflow-hidden">
-              <img src="/api/placeholder/40/40" alt="Salmoon Logo" className="h-full w-full object-cover" />
+            <img src="/salmoon.png" alt="Salmoon Logo" className="h-full w-full object-cover" />
             </div>
             <span className="font-bold text-xl bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">SALMOON</span>
           </div>
@@ -81,11 +82,10 @@ const SalmoonTokenWebsite = () => {
       {menuOpen && (
         <div className={`md:hidden ${darkMode ? 'bg-gray-800' : 'bg-white'} py-4 px-6 shadow-md`}>
           <div className="flex flex-col space-y-4">
-          <button className="hover:text-blue-500 transition-colors" onClick={() => setMenuOpen(false)}>About</button>
-          <button className="hover:text-blue-500 transition-colors" onClick={() => setMenuOpen(false)}>Tokenomics</button>
-          <button className="hover:text-blue-500 transition-colors" onClick={() => setMenuOpen(false)}>Roadmap</button>
-          <button className="hover:text-blue-500 transition-colors" onClick={() => setMenuOpen(false)}>Community</button>
-
+            <a href="#about" className="hover:text-blue-500 transition-colors" onClick={() => setMenuOpen(false)}>About</a>
+            <a href="#tokenomics" className="hover:text-blue-500 transition-colors" onClick={() => setMenuOpen(false)}>Tokenomics</a>
+            <a href="#roadmap" className="hover:text-blue-500 transition-colors" onClick={() => setMenuOpen(false)}>Roadmap</a>
+            <a href="#community" className="hover:text-blue-500 transition-colors" onClick={() => setMenuOpen(false)}>Community</a>
             <button className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 py-2 rounded-full font-medium hover:opacity-90 transition-opacity">
               Buy Salmoon
             </button>
@@ -117,7 +117,7 @@ const SalmoonTokenWebsite = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full opacity-20 animate-pulse"></div>
               <div className="absolute inset-2 bg-gradient-to-br from-blue-300 to-purple-400 rounded-full opacity-30"></div>
               <div className="absolute inset-0 flex items-center justify-center">
-                <img src="/api/placeholder/300/300" alt="Salmoon" className="w-3/4 h-3/4 object-contain transform hover:rotate-12 transition-transform duration-300" />
+              <img src="/salmoon.jpg" alt="Salmoon" className="w-3/4 h-3/4 object-contain transform hover:rotate-12 transition-transform duration-300" />
               </div>
             </div>
           </div>
@@ -205,7 +205,7 @@ const SalmoonTokenWebsite = () => {
                   
                   <div className="flex justify-between pb-2 border-b border-gray-200 dark:border-gray-700">
                     <span>Symbol</span>
-                    <span className="font-medium">$SALMON</span>
+                    <span className="font-medium">$SALMO</span>
                   </div>
                   
                   <div className="flex justify-between pb-2 border-b border-gray-200 dark:border-gray-700">
@@ -385,7 +385,7 @@ const SalmoonTokenWebsite = () => {
             {['Twitter', 'Telegram', 'Discord', 'Medium'].map((platform) => (
               <a 
                 key={platform}
-                href="https://x.com/zenyaad" 
+                href="https://x.com/zenjoee" 
                 className={`p-6 rounded-xl ${darkMode ? 'bg-gray-900 hover:bg-gray-700' : 'bg-white hover:bg-blue-100'} shadow-lg transition-all flex flex-col items-center justify-center gap-4 group`}
               >
                 <div className="w-16 h-16 rounded-full bg-blue-100 text-blue-500 flex items-center justify-center group-hover:scale-110 transition-transform">
@@ -402,7 +402,7 @@ const SalmoonTokenWebsite = () => {
               <input 
                 type="email" 
                 placeholder="Enter your email" 
-                className={`flex-1 px-4 py-3 rounded-l-lg focus:outline-none ${darkMode ? 'bg-gray-700 border-gray-600' : 'bg-white border-gray-300'} border`} 
+                className={`flex-1 px-4 py-3 rounded-l-lg focus:outline-none ${darkMode ? 'bg-gray-700 border-gray-600' : 'bg-white border-gray-300'} border`}
               />
               <button className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 py-3 rounded-r-lg font-medium hover:opacity-90 transition-opacity">
                 Subscribe
@@ -418,22 +418,22 @@ const SalmoonTokenWebsite = () => {
           <div className="flex flex-col md:flex-row justify-between items-center mb-8">
             <div className="flex items-center gap-2 mb-6 md:mb-0">
               <div className="h-10 w-10 rounded-full overflow-hidden">
-                <img src="/api/placeholder/40/40" alt="Salmoon Logo" className="h-full w-full object-cover" />
+              <img src="/logo.png" alt="Salmoon Logo" className="h-full w-full object-cover" />
               </div>
               <span className="font-bold text-xl bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">SALMOON</span>
             </div>
             
             <div className="flex gap-4">
-              <a href="https://x.com/zenyaad" className={`w-10 h-10 rounded-full ${darkMode ? 'bg-gray-800 hover:bg-gray-700' : 'bg-white hover:bg-gray-200'} flex items-center justify-center transition-colors`}>
+              <a href="https://x.com/zenjoee" className={`w-10 h-10 rounded-full ${darkMode ? 'bg-gray-800 hover:bg-gray-700' : 'bg-white hover:bg-gray-200'} flex items-center justify-center transition-colors`}>
                 <span>T</span>
               </a>
               <a href="https://t.me/airdroplim" className={`w-10 h-10 rounded-full ${darkMode ? 'bg-gray-800 hover:bg-gray-700' : 'bg-white hover:bg-gray-200'} flex items-center justify-center transition-colors`}>
                 <span>TG</span>
               </a>
-              <a href="https://medium.com/@zenjoee" className={`w-10 h-10 rounded-full ${darkMode ? 'bg-gray-800 hover:bg-gray-700' : 'bg-white hover:bg-gray-200'} flex items-center justify-center transition-colors`}>
+              <a href="https://.discord.com/" className={`w-10 h-10 rounded-full ${darkMode ? 'bg-gray-800 hover:bg-gray-700' : 'bg-white hover:bg-gray-200'} flex items-center justify-center transition-colors`}>
                 <span>D</span>
               </a>
-              <a href="https://discord.com/" className={`w-10 h-10 rounded-full ${darkMode ? 'bg-gray-800 hover:bg-gray-700' : 'bg-white hover:bg-gray-200'} flex items-center justify-center transition-colors`}>
+              <a href="https://medium.com/@zenjoee" className={`w-10 h-10 rounded-full ${darkMode ? 'bg-gray-800 hover:bg-gray-700' : 'bg-white hover:bg-gray-200'} flex items-center justify-center transition-colors`}>
                 <span>M</span>
               </a>
             </div>
@@ -444,36 +444,36 @@ const SalmoonTokenWebsite = () => {
               <div>
                 <h4 className="font-medium mb-4">About</h4>
                 <ul className="space-y-2 opacity-80">
-                  <li><a href="#" className="hover:text-blue-500 transition-colors">Our Story</a></li>
-                  <li><a href="#" className="hover:text-blue-500 transition-colors">Team</a></li>
-                  <li><a href="#" className="hover:text-blue-500 transition-colors">Careers</a></li>
+                  <li><a href="..public/bitcoin.pdf" className="hover:text-blue-500 transition-colors">Our Story</a></li>
+                  <li><a href="..public/bitcoin.pdf" className="hover:text-blue-500 transition-colors">Team</a></li>
+                  <li><a href="..public/bitcoin.pdf" className="hover:text-blue-500 transition-colors">Careers</a></li>
                 </ul>
               </div>
               
               <div>
                 <h4 className="font-medium mb-4">Resources</h4>
                 <ul className="space-y-2 opacity-80">
-                  <li><a href="#" className="hover:text-blue-500 transition-colors">Whitepaper</a></li>
-                  <li><a href="#" className="hover:text-blue-500 transition-colors">Documentation</a></li>
-                  <li><a href="#" className="hover:text-blue-500 transition-colors">Media Kit</a></li>
+                  <li><a href="..public/bitcoin.pdf" className="hover:text-blue-500 transition-colors">Whitepaper</a></li>
+                  <li><a href="..public/bitcoin.pdf" className="hover:text-blue-500 transition-colors">Documentation</a></li>
+                  <li><a href="..public/bitcoin.pdf" className="hover:text-blue-500 transition-colors">Media Kit</a></li>
                 </ul>
               </div>
               
               <div>
                 <h4 className="font-medium mb-4">Community</h4>
                 <ul className="space-y-2 opacity-80">
-                  <li><a href="#" className="hover:text-blue-500 transition-colors">Twitter</a></li>
-                  <li><a href="#" className="hover:text-blue-500 transition-colors">Telegram</a></li>
-                  <li><a href="#" className="hover:text-blue-500 transition-colors">Discord</a></li>
+                  <li><a href="https://x.com/zenjoee" className="hover:text-blue-500 transition-colors">Twitter</a></li>
+                  <li><a href="https://t.me/whalevomitcalls" className="hover:text-blue-500 transition-colors">Telegram</a></li>
+                  <li><a href="https://discord.com/" className="hover:text-blue-500 transition-colors">Discord</a></li>
                 </ul>
               </div>
               
               <div>
                 <h4 className="font-medium mb-4">Legal</h4>
                 <ul className="space-y-2 opacity-80">
-                  <li><a href="#" className="hover:text-blue-500 transition-colors">Privacy Policy</a></li>
-                  <li><a href="#" className="hover:text-blue-500 transition-colors">Terms of Service</a></li>
-                  <li><a href="#" className="hover:text-blue-500 transition-colors">Cookie Policy</a></li>
+                  <li><a href="..public/disclaimer.pdf" className="hover:text-blue-500 transition-colors">Privacy Policy</a></li>
+                  <li><a href="..public/disclaimer.pdf" className="hover:text-blue-500 transition-colors">Terms of Service</a></li>
+                  <li><a href="..public/disclaimer.pdf" className="hover:text-blue-500 transition-colors">Cookie Policy</a></li>
                 </ul>
               </div>
             </div>
